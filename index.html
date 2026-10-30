@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramón Cuadrado · Computational materials physics</title>
+  <meta name="description" content="Ramón Cuadrado, Senior Researcher at ICMM-CSIC. First-principles method development for magnetism, spin-orbit physics and crystal structure prediction.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">Ramón Cuadrado</a>
+    <nav aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#methods">Methods</a>
+      <a href="#publications">Publications</a>
+      <a href="#career">Career</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Computational materials physics</p>
+        <h1>Ramón Cuadrado</h1>
+        <p class="role">Senior Researcher · Instituto de Ciencia de Materiales de Madrid (ICMM-CSIC)</p>
+        <p class="badge">R3 Certificate of Research Excellence · Spanish State Research Agency (AEI)</p>
+        <p class="lead">
+          I develop first-principles methods to predict how materials behave at the atomic scale,
+          and I use them to design magnetic and functional materials: from spin-orbit physics in
+          alloys and interfaces to the crystal structures of flexible molecules.
+        </p>
+        <p class="hero-links">
+          <a class="button" href="#publications">Publications</a>
+          <a class="text-link" href="https://scholar.google.com/citations?user=fPPODP4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="text-link" href="https://orcid.org/0000-0002-8344-2319" target="_blank" rel="noopener">ORCID</a>
+          <a class="text-link" href="mailto:ramon.cuadrado@csic.es">Email</a>
+        </p>
+      </div>
+      <img class="portrait" src="img/ramon-cuadrado.jpg" alt="Portrait of Ramón Cuadrado" width="1000" height="1250">
+    </div>
+  </section>
+
+  <section class="facts" aria-label="Key figures">
+    <div class="wrap facts-inner">
+      <div><strong>33</strong><span>peer-reviewed papers</span></div>
+      <div><strong>15</strong><span>as first author</span></div>
+      <div><strong>1,600+</strong><span>citations</span></div>
+      <div><strong>17</strong><span>h-index</span></div>
+      <div><strong>20 yrs</strong><span>in Spain and the UK</span></div>
+    </div>
+    <p class="wrap facts-note">Citation figures from Google Scholar, 2026.</p>
+  </section>
+
+  <section id="research" class="section">
+    <div class="wrap">
+      <h2>Research</h2>
+      <p class="section-intro">
+        My work sits between method development and materials design. I write the theory into
+        open-source electronic-structure codes, then use it to answer questions that experiments
+        and devices pose: why a material is magnetic along one axis and not another, how two
+        magnetic layers talk to each other through a spacer, which crystal a molecule will form.
+      </p>
+
+      <div class="phases">
+        <article class="phase">
+          <p class="phase-when">2005 – 2024</p>
+          <h3>Past work</h3>
+          <p>
+            During my PhD at ICMM I derived and implemented a fully relativistic pseudopotential
+            formalism in the SIESTA code, bringing spin-orbit coupling to large-scale
+            density-functional calculations with atomic orbitals.
+          </p>
+          <p>
+            At the University of York I applied it to the magnetic anisotropy of L1<sub>0</sub> FePt
+            alloys, nanoparticles and Fe/MgO interfaces, the materials behind high-density magnetic
+            recording and MRAM, in projects funded by Seagate, Samsung and Toyota. I linked DFT to
+            atomistic spin models to reach device-relevant sizes and temperatures.
+          </p>
+          <p>
+            At ICN2 in Barcelona I added constrained non-collinear magnetism to SIESTA and explained
+            the antiferromagnetic coupling mediated by graphene in Fe/graphene/Co, which opened a
+            route to synthetic antiferromagnets with a spacer one atom thick. At the University of Southampton I
+            led three work packages of the ERC Synergy project ADAM on crystal structure
+            prediction, where I built a method that treats molecular flexibility explicitly and
+            validated it in the seventh international blind test.
+          </p>
+        </article>
+
+        <article class="phase phase-current">
+          <p class="phase-when">2024 – today</p>
+          <h3>Current work</h3>
+          <p>
+            At ICMM-CSIC I lead the development of computational methods in materials science
+            along three lines.
+          </p>
+          <ul>
+            <li>
+              <strong>Molecular flexibility.</strong> Crystal structure prediction for molecules
+              that change shape as they pack, one of the open problems of the field.
+            </li>
+            <li>
+              <strong>Magnetic metal-organic frameworks.</strong> Porous, tunable crystals in which
+              magnetism, structure and chemistry can be designed together.
+            </li>
+            <li>
+              <strong>Geometry of quantum state space.</strong> How the geometric properties of
+              electronic states shape the response of a material.
+            </li>
+          </ul>
+          <p>
+            Alongside, I study Heusler alloys for spintronics, high-entropy alloys for permanent
+            magnets, and the optoelectronic properties of MOFs and covalent organic frameworks
+            with experimental groups at the institute.
+          </p>
+        </article>
+
+        <article class="phase">
+          <p class="phase-when">Next</p>
+          <h3>Future work</h3>
+          <p>
+            The aim is to turn these methods into design rules. For framework materials, that
+            means predicting flexible and magnetic MOFs that respond to a stimulus before they are
+            synthesised, so that actuation and sensing can be engineered from the structure up.
+          </p>
+          <p>
+            For spin-orbit materials, it means using quantum-geometric quantities computed from
+            relativistic first-principles calculations as descriptors for spintronic and
+            low-power devices.
+          </p>
+          <p>
+            Both directions rely on large sets of calculations analysed with data-driven tools,
+            and on keeping the methods open and reproducible for the community.
+          </p>
+        </article>
+      </div>
+
+      <div class="figures">
+        <figure>
+          <img src="img/bands-te-chain.png" alt="Electronic band structure of an isolated tellurium chain, comparing two spin-orbit treatments" width="728" height="562" loading="lazy">
+          <figcaption>Helical Te chain</figcaption>
+        </figure>
+        <figure>
+          <img src="img/bands-bi2se3.png" alt="Electronic band structure of a six-quintuple-layer Bi2Se3 slab showing the surface Dirac cone" width="712" height="592" loading="lazy">
+          <figcaption>Bi<sub>2</sub>Se<sub>3</sub> topological insulator</figcaption>
+        </figure>
+        <figure>
+          <img src="img/bands-gete.png" alt="Electronic band structure of bulk GeTe showing Rashba splitting" width="850" height="925" loading="lazy">
+          <figcaption>Rashba splitting in bulk GeTe</figcaption>
+        </figure>
+      </div>
+      <p class="figures-credit">
+        Band structures with spin-orbit coupling computed in SIESTA. From R. Cuadrado <em>et al.</em>,
+        <a href="https://doi.org/10.1103/PhysRevB.104.195104" target="_blank" rel="noopener">Phys. Rev. B 104, 195104 (2021)</a>.
+        © American Physical Society.
+      </p>
+    </div>
+  </section>
+
+  <section id="methods" class="section section-alt">
+    <div class="wrap">
+      <h2>Methods and software</h2>
+      <p class="section-intro">
+        I am an official developer of two open-source codes, and most of the methods I write
+        end up in one of them.
+      </p>
+      <div class="codes">
+        <article class="code">
+          <h3>SIESTA</h3>
+          <p>Density-functional code for efficient electronic-structure calculations and molecular dynamics with numerical atomic orbitals. I develop its relativistic and magnetic functionality and teach in its schools.</p>
+          <p class="code-links">
+            <a href="https://siesta-project.org/siesta/About/overview.html" target="_blank" rel="noopener">Website</a>
+            <a href="https://gitlab.com/siesta-project/siesta" target="_blank" rel="noopener">GitLab</a>
+            <a href="https://docs.siesta-project.org/projects/siesta/en/stable/" target="_blank" rel="noopener">Documentation</a>
+          </p>
+        </article>
+        <article class="code">
+          <h3>mol-CSPy</h3>
+          <p>Crystal structure prediction for molecular crystals, developed in the group of Prof. Graeme Day at the University of Southampton. I develop its treatment of molecular flexibility.</p>
+          <p class="code-links">
+            <a href="https://gitlab.com/mol-cspy/mol-cspy" target="_blank" rel="noopener">GitLab</a>
+          </p>
+        </article>
+      </div>
+      <h3 class="sub methods-sub">What I have built</h3>
+      <div class="cards">
+        <article class="card">
+          <h3>Spin-orbit coupling</h3>
+          <p>Fully relativistic pseudopotential formalism for atomic-orbital basis sets, giving spin-orbit splittings and magnetic anisotropies in systems of hundreds of atoms.</p>
+          <p class="card-ref">J. Phys.: Condens. Matter 24, 086005 (2012) · Phys. Rev. B 104, 195104 (2021)</p>
+        </article>
+        <article class="card">
+          <h3>Constrained non-collinear magnetism</h3>
+          <p>Constraint of the direction of atomic magnetic moments under a fully relativistic Hamiltonian, to map out magnetic energy landscapes.</p>
+          <p class="card-ref">J. Phys. Mater. 1, 015010 (2018)</p>
+        </article>
+        <article class="card">
+          <h3>DFT+U with spin-orbit coupling</h3>
+          <p>Hubbard correction compatible with non-collinear magnetism and spin-orbit coupling, for strongly correlated magnetic materials.</p>
+          <p class="card-ref">Comput. Phys. Commun. 286, 108684 (2023)</p>
+        </article>
+        <article class="card">
+          <h3>Flexible crystal structure prediction</h3>
+          <p>First-principles mapping of thousands of molecular conformations to select those most likely to crystallise, before generating crystal structures. Validated in the seventh CCDC blind test.</p>
+          <p class="card-ref">Acta Cryst. B 80, 517 (2024)</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="wrap">
+      <h2>Publications</h2>
+      <div class="pub-controls">
+        <div class="filters" role="group" aria-label="Filter publications">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="selected" aria-pressed="false">Selected</button>
+          <button type="button" data-filter="first" aria-pressed="false">First author</button>
+        </div>
+        <p id="pub-count" class="pub-count"></p>
+      </div>
+      <div id="pub-list">
+        <noscript><p>The publication list needs JavaScript. It is also available on <a href="https://orcid.org/0000-0002-8344-2319">ORCID</a>.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section id="career" class="section section-alt">
+    <div class="wrap">
+      <h2>Career</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="sub">Positions</h3>
+          <ol class="timeline">
+            <li>
+              <p class="t-when">2024 – today</p>
+              <p class="t-what">Senior Researcher</p>
+              <p class="t-where">Instituto de Ciencia de Materiales de Madrid (ICMM-CSIC), Spain</p>
+            </li>
+            <li>
+              <p class="t-when">2020 – 2024</p>
+              <p class="t-what">ERC Synergy Senior Research Fellow</p>
+              <p class="t-where">Department of Chemistry, University of Southampton, UK · with Prof. Graeme Day</p>
+            </li>
+            <li>
+              <p class="t-when">2016 – 2020</p>
+              <p class="t-what">Marie Curie COFUND Postdoctoral Research Associate</p>
+              <p class="t-where">Catalan Institute of Nanoscience and Nanotechnology (ICN2), Barcelona, Spain · with Prof. Pablo Ordejón</p>
+            </li>
+            <li>
+              <p class="t-when">2015 – 2016</p>
+              <p class="t-what">Severo Ochoa Postdoctoral Researcher</p>
+              <p class="t-where">ICN2, Barcelona, Spain · with Prof. Pablo Ordejón</p>
+            </li>
+            <li>
+              <p class="t-when">2012 – 2015</p>
+              <p class="t-what">Postdoctoral Research Fellow, funded by Seagate and Samsung</p>
+              <p class="t-where">Department of Physics, University of York, UK · with Prof. Roy W. Chantrell</p>
+            </li>
+            <li>
+              <p class="t-when">2011 – 2012</p>
+              <p class="t-what">Marie Curie Experienced Researcher, ITN FANTOMAS</p>
+              <p class="t-where">Department of Physics, University of York, UK · with Prof. Roy W. Chantrell</p>
+            </li>
+            <li>
+              <p class="t-when">2005 – 2009</p>
+              <p class="t-what">FPI-CSIC predoctoral fellow</p>
+              <p class="t-where">ICMM-CSIC, Madrid, Spain · supervised by Dr. Jorge I. Cerdá</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h3 class="sub">Education</h3>
+          <ul class="plain">
+            <li>
+              <strong>PhD in Condensed Matter Physics</strong>, <em>summa cum laude</em><br>
+              Universidad Autónoma de Madrid and ICMM-CSIC, 2011<br>
+              <span class="muted">Simulation of electronic and magnetic properties of mesoscopic systems</span>
+            </li>
+            <li>
+              <strong>Diploma of Advanced Studies in Condensed Matter Physics</strong><br>
+              Universidad Autónoma de Madrid, 2008
+            </li>
+            <li>
+              <strong>Degree in Physics</strong><br>
+              Universidad Complutense de Madrid, 2003
+            </li>
+          </ul>
+
+          <h3 class="sub">Funding as principal investigator</h3>
+          <ul class="plain">
+            <li>
+              <strong>Multiscale modelling of the interface in bi-magnetic nanosystems</strong><br>
+              European Commission, Marie Skłodowska-Curie Actions · 2016 – 2020 · €250k
+            </li>
+            <li>
+              <strong>Frustration-driven long-range magnetic order at Fe<sub>3</sub>O<sub>4</sub>/Mn<sub>3</sub>O<sub>4</sub> bi-magnetic interfaces</strong><br>
+              Spanish Supercomputing Network (RES-BSC) · 2026
+            </li>
+            <li>
+              <strong>Robust perpendicular magnetic anisotropy in high-entropy L1<sub>0</sub> alloys</strong><br>
+              Spanish Supercomputing Network (RES-BSC) · 2026
+            </li>
+            <li>
+              <strong>Magnetic phenomena in 2D Mn<sub>2</sub>Ru<sub>x</sub>Ga/MgO(001) heterojunctions</strong><br>
+              Spanish Supercomputing Network (RES-BSC) · 2024 – 2025
+            </li>
+            <li>
+              <strong>High-throughput electronic configurations of 2D covalent organic frameworks</strong><br>
+              Spanish Supercomputing Network (RES-BSC) · 2024
+            </li>
+            <li>
+              <strong>Crystal structure prediction of photocatalytic organic crystals</strong><br>
+              Materials Chemistry Consortium, UK · 2022 – 2023 · with Prof. Graeme Day
+            </li>
+            <li>
+              <strong>Long-range magnetic order in core/shell bi-magnetic nanosystems</strong><br>
+              Spanish Supercomputing Network (RES-BSC) · 2019
+            </li>
+          </ul>
+          <p class="muted small">
+            Team member in a further nine projects, including the ERC Synergy Grant ADAM
+            (€10M) and the EU FP7 project FEMTOSPIN (€4M).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching" class="section">
+    <div class="wrap">
+      <h2>Teaching, talks and service</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="sub">Advanced schools</h3>
+          <p class="muted">Lecturer and tutor on magnetism, non-collinear spin and spin-orbit coupling in the SIESTA schools.</p>
+          <ul class="plain compact">
+            <li><strong>2025</strong> · Spin, spin-orbit coupling and magnetism · MaX Centre of Excellence and ICN2</li>
+            <li><strong>2021</strong> · First-principles simulation of materials with SIESTA · CECAM</li>
+            <li><strong>2018</strong> · Open Knowledge Workshop on spin-orbit coupling in SIESTA · ICN2</li>
+            <li><strong>2017</strong> · High Performance Computing and the SIESTA DFT package · RES-BSC</li>
+          </ul>
+
+          <h3 class="sub">University teaching</h3>
+          <ul class="plain compact">
+            <li><strong>2018/19</strong> · Nanometric System Simulation · Universitat Autònoma de Barcelona</li>
+            <li><strong>2013/14</strong> · Lagrangian Mechanics; Newtonian Mechanics and Physics of Matter · University of York</li>
+          </ul>
+
+          <h3 class="sub">Mentoring</h3>
+          <p>
+            I co-supervise a PhD thesis at the Universidad Autónoma de Madrid on multiscale
+            modelling of high-entropy alloys for permanent magnets, and have supervised
+            undergraduate theses and worked day to day with PhD students and postdocs in York
+            and Barcelona.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="sub">Invited talks</h3>
+          <ul class="plain compact">
+            <li><strong>2025</strong> · Non-collinearity and spin-orbit coupling in SIESTA · Universidad de Oviedo</li>
+            <li><strong>2024</strong> · Relativistic effects on the electronic structure of materials · Instituto de Micro y Nanotecnología, Madrid</li>
+            <li><strong>2019</strong> · Magnetic couplings and anisotropies tuned by graphene in magnetic heterojunctions · Lavoisier Discussion on Quantum Simulation, ICN2</li>
+            <li><strong>2017</strong> · The role of relativistic effects on the electronic structure of materials · ALBA Synchrotron, Barcelona</li>
+            <li><strong>2015</strong> · Controlling magnetic properties of FePt clusters deposited on MgO(001) · University of Konstanz</li>
+            <li><strong>2014</strong> · Tuning the magnetic anisotropy of Y<sub>2</sub>Fe<sub>14</sub>B · Toyota Motor Corporation, Tokyo</li>
+          </ul>
+
+          <h3 class="sub">Recognition and service</h3>
+          <ul class="plain compact">
+            <li><strong>R3 Certificate of Research Excellence</strong>, Spanish State Research Agency (AEI), 2025 call</li>
+            <li>Referee for Physical Review Letters, Physical Review B, Physical Review Materials, 2D Materials, Journal of Magnetism and Magnetic Materials and Journal of Physics: Materials</li>
+            <li>PhD examination committee, Universidad de Oviedo, 2025</li>
+            <li>Session organiser, Intermag Conference, Dresden, 2014</li>
+            <li>Best poster award, Trends in Nanotechnology, 2008</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <h2>Contact</h2>
+      <p>
+        Instituto de Ciencia de Materiales de Madrid (ICMM-CSIC)<br>
+        Cantoblanco, 28049 Madrid, Spain
+      </p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:ramon.cuadrado@csic.es">ramon.cuadrado@csic.es</a></li>
+      <li><a href="https://scholar.google.com/citations?user=fPPODP4AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0002-8344-2319" target="_blank" rel="noopener">ORCID 0000-0002-8344-2319</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/publications.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
