@@ -360,7 +360,7 @@ h3 { margin: 0 0 10px; font-size: 1.1rem; font-weight: 650; }
 
 .figures {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1.1fr 1.6fr;
   gap: 20px;
   margin-top: 44px;
 }
@@ -373,7 +373,8 @@ h3 { margin: 0 0 10px; font-size: 1.1rem; font-weight: 650; }
   display: flex;
   flex-direction: column;
 }
-.figures img { width: 100%; height: 250px; object-fit: contain; }
+.figures img { width: 100%; height: 230px; object-fit: contain; }
+.figures figcaption .ref { margin-left: 2px; }
 .figures figcaption {
   margin-top: 12px;
   padding-top: 10px;
