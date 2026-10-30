@@ -5,10 +5,11 @@
 //   first     first or last author
 //   corr      corresponding author
 //   selected  shown under the "Selected" filter
+//   cites     Google Scholar citations, shown for highly cited papers (update with the date in index.html)
 const PUBLICATIONS = [
   {
     n: 34, year: 2026, status: "Under review",
-    title: "Topological engineering of band gap in imine-based covalent organic framework",
+    title: "Topological engineering of band gap in imine-based covalent organic frameworks",
     authors: "D. Aparicio, L. Boizas, S. Balestra, R. Cuadrado, V. Mwatati Mwalukuku, J. Anta, P. Aranda, E. García-Frutos, J. Pérez-Carvajal",
     venue: "Journal of Materials Chemistry A"
   },
@@ -30,7 +31,7 @@ const PUBLICATIONS = [
     doi: "10.1021/acsami.5c04982"
   },
   {
-    n: 31, year: 2024, selected: true,
+    n: 31, year: 2024, selected: true, cites: 139,
     title: "The seventh blind test of crystal structure prediction: structure generation methods",
     summary: "Report on the seventh international blind test of crystal structure prediction, organised by the Cambridge Crystallographic Data Centre with seven target systems of increasing complexity. Many methods reproduced the structures of a small flexible molecule, few succeeded for the most complex targets, and disorder was predicted blindly for the first time.",
     authors: "L. M. Hunnisett, …, R. Cuadrado, …, J. C. Cole (154 authors)",
@@ -38,7 +39,7 @@ const PUBLICATIONS = [
     doi: "10.1107/S2052520624007492"
   },
   {
-    n: 30, year: 2023, selected: true,
+    n: 30, year: 2023,
     title: "Compatibility of DFT+U with non-collinear magnetism and spin-orbit coupling within a framework of numerical atomic orbitals",
     summary: "Extension of the DFT+U method to non-collinear magnetism and spin-orbit coupling with numerical atomic orbitals, treating the Hubbard U and exchange J terms separately. The implementation in SIESTA includes total energy, forces and stresses, and is validated on isolated atoms and bulk solids with strong spin-orbit coupling.",
     authors: "F. Gómez-Ortiz, N. Carral-Sainz, J. Sifuna, V. Monteseguro, R. Cuadrado, P. García-Fernández, J. Junquera",
@@ -54,7 +55,7 @@ const PUBLICATIONS = [
     doi: "10.1103/PhysRevB.106.L161410"
   },
   {
-    n: 28, year: 2021, first: true, corr: true, selected: true,
+    n: 28, year: 2021, first: true, corr: true,
     title: "Validity of the on-site spin-orbit coupling approximation",
     summary: "A systematic test of the widely used on-site approximation to spin-orbit coupling against the full treatment, over systems of different dimensionality. The approximation is usually accurate, but it fails when 5d electrons lie near the Fermi level, gives a qualitatively wrong picture of the surface state of Bi<sub>2</sub>Se<sub>3</sub>, and tends to underestimate magnetic anisotropy energies.",
     authors: "R. Cuadrado, R. Robles, A. García, M. Pruneda, P. Ordejón, J. Ferrer, J. I. Cerdá",
@@ -70,7 +71,7 @@ const PUBLICATIONS = [
     doi: "10.1063/5.0053950"
   },
   {
-    n: 26, year: 2020, selected: true,
+    n: 26, year: 2020, selected: true, cites: 729,
     title: "Siesta: Recent developments and applications",
     summary: "Review of the current capabilities of the SIESTA code, covering the developments added to its core method in recent years: full spin-orbit interaction, electron transport, DFT+U and hybrid functionals, time-dependent DFT, new solvers and interfaces to other codes and workflows.",
     authors: "A. García, N. Papior, …, R. Cuadrado, …, J. Junquera (35 authors)",
@@ -78,7 +79,7 @@ const PUBLICATIONS = [
     doi: "10.1063/5.0005077"
   },
   {
-    n: 25, year: 2019, first: true, corr: true, selected: true,
+    n: 25, year: 2019, first: true, corr: true,
     title: "Guidelines for selecting interlayer spacers in synthetic 2D-based antiferromagnets from first-principles simulations",
     summary: "Density-functional study of Co and Fe monolayers coupled through one to three graphene layers or a layer of h-BN. The antiferromagnetic coupling is carried by the hybridisation of carbon p<sub>z</sub> orbitals with the metal 3d states and drops sharply for thicker spacers, so a single-layer spacer is needed to build graphene-based synthetic antiferromagnets.",
     authors: "R. Cuadrado, M. Pruneda",
@@ -94,7 +95,7 @@ const PUBLICATIONS = [
     doi: "10.1088/2515-7639/aae7db"
   },
   {
-    n: 23, year: 2018, first: true, corr: true, selected: true,
+    n: 23, year: 2018, first: true, corr: true,
     title: "Site-resolved contributions to the magnetic-anisotropy energy and complex spin structure of Fe/MgO sandwiches",
     summary: "First-principles and spin-dynamics calculations of MgO/Fe/MgO sandwiches, resolving the magnetic anisotropy layer by layer. The surface spins turn out to be non-collinear, as a result of the competition between antiferromagnetic surface coupling and Dzyaloshinskii-Moriya interactions.",
     authors: "R. Cuadrado, L. Oroszlány, A. Deák, T. A. Ostler, A. Meo, R. V. Chepulskii, D. Apalkov, R. F. L. Evans, L. Szunyogh, R. W. Chantrell",
@@ -110,7 +111,7 @@ const PUBLICATIONS = [
     doi: "10.1038/s41598-018-21934-5"
   },
   {
-    n: 21, year: 2017, selected: true,
+    n: 21, year: 2017, selected: true, cites: 59,
     title: "Graphene-based synthetic antiferromagnets and ferrimagnets",
     summary: "Experiments and first-principles simulations establish that ultrathin Fe/graphene/Co films on Ir(111) show a robust perpendicular antiferromagnetic coupling that is stable above room temperature. The calculations confirm that graphene itself mediates the coupling, opening a route to graphene-based synthetic antiferromagnets.",
     authors: "P. Gargiani, R. Cuadrado, H. B. Vasili, M. Pruneda, M. Valvidares",
@@ -126,7 +127,7 @@ const PUBLICATIONS = [
     doi: "10.1016/j.jmmm.2017.07.085"
   },
   {
-    n: 19, year: 2017, selected: true,
+    n: 19, year: 2017, cites: 60,
     title: "Voltage-induced coercivity reduction in nanoporous alloy films: a boost toward energy-efficient magnetic actuation",
     summary: "Applying an electric field to thick nanoporous Cu–Ni films strongly reduces their coercivity at room temperature, through voltage-induced changes in the magnetic anisotropy. Because the whole porous film contributes, the effect is no longer restricted to ultrathin films, which matters for low-power magnetic actuation and storage.",
     authors: "A. Quintana, J. Zhang, E. Isarain-Chávez, E. Menéndez, R. Cuadrado, R. Robles, M. D. Baró, M. Guerrero, S. Pané, B. J. Nelson, C. M. Müller, P. Ordejón, J. Nogués, E. Pellicer, J. Sort",
@@ -134,7 +135,7 @@ const PUBLICATIONS = [
     doi: "10.1002/adfm.201701904"
   },
   {
-    n: 18, year: 2016, first: true, corr: true, selected: true,
+    n: 18, year: 2016, first: true, corr: true,
     title: "In-plane/out-of-plane disorder influence on the magnetic anisotropy of Fe<sub>1−y</sub>Mn<sub>y</sub>Pt-L1<sub>0</sub> bulk alloy",
     summary: "First-principles study of FePt-L1<sub>0</sub> in which part of the Fe is replaced by Mn. The magnetic anisotropy decreases when the Mn moments align antiferromagnetically and increases when they align ferromagnetically, through changes in the lattice and in the atomic moments.",
     authors: "R. Cuadrado, K. Liu, T. J. Klemmer, R. W. Chantrell",
@@ -150,7 +151,7 @@ const PUBLICATIONS = [
     doi: "10.1088/0953-8984/28/15/156003"
   },
   {
-    n: 16, year: 2015, selected: true,
+    n: 16, year: 2015, selected: true, cites: 80,
     title: "Strain induced vortex core switching in planar magnetostrictive nanostructures",
     summary: "Micromagnetic simulations propose a new way to reverse a magnetic vortex core: a time-varying strain gradient applied to a magnetostrictive Fe–Ga structure through a piezoelectric layer. The reversal is deterministic and controlled by an electric field, of interest for magnetic storage.",
     authors: "T. A. Ostler, R. Cuadrado, R. W. Chantrell, A. W. Rushforth, S. A. Cavill",
@@ -166,7 +167,7 @@ const PUBLICATIONS = [
     doi: "10.1103/PhysRevB.91.075420"
   },
   {
-    n: 14, year: 2014, first: true, corr: true, selected: true,
+    n: 14, year: 2014, first: true, corr: true,
     title: "Magnetic anisotropy of Fe<sub>1−y</sub>X<sub>y</sub>Pt-L1<sub>0</sub> [X = Cr, Mn, Co, Ni, Cu] bulk alloys",
     summary: "Fully relativistic calculations show that replacing Fe by Cr, Mn, Co, Ni or Cu in FePt-L1<sub>0</sub> tunes its magnetocrystalline anisotropy through the change in tetragonality. The results agree with experiment and show that models with a fixed band structure are not enough to describe the doped alloys.",
     authors: "R. Cuadrado, T. J. Klemmer, R. W. Chantrell",
@@ -206,7 +207,7 @@ const PUBLICATIONS = [
     doi: "10.1103/PhysRevB.87.195310"
   },
   {
-    n: 9, year: 2012, first: true, corr: true, selected: true,
+    n: 9, year: 2012, first: true, corr: true,
     title: "Electronic and magnetic properties of bimetallic L1<sub>0</sub> cuboctahedral clusters by means of fully relativistic density-functional-based calculations",
     summary: "Structural, electronic and magnetic study of L1<sub>0</sub>-ordered FePt, CoPt, FeAu and FePd nanoparticles of 13, 55 and 147 atoms. The magnetic anisotropy depends on the particle size, on the position of the Fe planes and on the shape of the surface.",
     authors: "R. Cuadrado, R. W. Chantrell",
@@ -214,7 +215,7 @@ const PUBLICATIONS = [
     doi: "10.1103/PhysRevB.86.224415"
   },
   {
-    n: 8, year: 2012, first: true, corr: true, selected: true,
+    n: 8, year: 2012, first: true, corr: true, selected: true, cites: 105,
     title: "Fully relativistic pseudopotential formalism under an atomic orbital basis: spin–orbit splittings and magnetic anisotropies",
     summary: "Implementation of spin-orbit coupling in the SIESTA code using fully relativistic pseudopotentials. It reproduces spin-orbit splittings from isolated atoms to bulk solids and surfaces, and gives magnetic anisotropy energies in good agreement with more costly full-potential methods.",
     authors: "R. Cuadrado, J. I. Cerdá",
@@ -222,7 +223,7 @@ const PUBLICATIONS = [
     doi: "10.1088/0953-8984/24/8/086005"
   },
   {
-    n: 7, year: 2010, first: true,
+    n: 7, year: 2010, first: true, cites: 81,
     title: "CoPc adsorption on Cu(111): origin of the C4 to C2 symmetry reduction",
     summary: "Calculations and scanning tunnelling microscopy data explain why cobalt phthalocyanine molecules look twofold instead of fourfold symmetric on Cu(111): the molecule deforms, with one of its two axes bending towards the surface. The effect is only reproduced when van der Waals interactions are included.",
     authors: "R. Cuadrado, J. I. Cerdá, Y. Wang, G. Xin, R. Berndt, H. Tang",
