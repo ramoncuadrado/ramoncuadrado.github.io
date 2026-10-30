@@ -46,6 +46,7 @@
         '<p class="pub-authors">' + boldMe(p.authors) + "</p>" +
         '<p class="pub-meta"><span class="pub-venue">' + p.venue + (p.status ? "" : " (" + p.year + ")") + "</span>" +
         tags(p) + links(p) + "</p>" +
+        (p.summary ? '<p class="pub-summary">' + p.summary + "</p>" : "") +
         "</div></li>";
     });
     if (year !== null) html += "</ol>";
